@@ -1,0 +1,25 @@
+To Do
+High Priority 
+1. Insert scripts on view requests/bids pages to remove table headers when there are zero records to show. Insert statement that says "You have nothing to view", etc.
+2. Get rid of white pages between each page
+3. Fix forgot password issue
+
+Low Priority
+1. Put comments in the forgot password files
+
+
+Eric Issues
+High Priority
+
+Low Priority
+1. my_requests_customer - push footer to the bottom
+2. center h2 in accepted-bid page
+3. add left padding? to text on accepted-bid page
+4. format border better?  accepted_bid page
+
+Other
+1.Discuss file setup with Eric
+
+Code Review
+1. Start at addsignupdata-customer.php
+*Probably need to consider reviewing refactoring msqli_execute statements*

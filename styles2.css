@@ -1,0 +1,268 @@
+/*style sheet for jon snow page*/
+
+/*Navigation bar styles*/
+.navbar{
+    background-color: #292b2c;
+}
+
+.navbar-brand{
+    color: white;
+}
+
+.navbar-brand:hover{
+    color: darkgray;
+}
+
+.nav-item .nav-link{
+    color: green;
+}
+
+.nav-item a:hover {
+    color: gray; !important;   
+}
+
+.navbar-text {
+    color: white;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-nav .open .dropdown-menu{
+    background-color: yellow;
+    /*background-color: #292b2c;*/
+}
+
+/*Carousel item styles*/
+.carousel-item{
+    max-height: 500px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='000000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='000000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+h2.about{
+    text-align: center;
+}
+
+
+main p{
+    text-align: center;
+}
+
+/*Footer Styles*/
+footer{
+    background-color: #292b2c;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 75%;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    float: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/*Media styles*/
+@media (max-width: 900px) {
+    
+    #carouselExampleIndicators {
+        display: none;
+    }
+    
+}
+
+/*Sign Up Page Styles*/
+.container p{
+    text-align: left;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+label{
+    font-weight: 700;
+    text-align: right;
+    width: 140px;
+}
+
+/* Input fields */
+input[type=text], input[type=password], input[type=tel], input[type=number] {
+    width: 50%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    /*display: inline-block;*/
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=tel]:focus, input[type=number]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;  
+    /*width: 100%*/
+    opacity: 0.8;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/*Styles for file upload input on request-service page*/
+.input-group-text{
+    font-weight: 700;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/*Cancel and signup buttons equal width */
+.cancelbtn, .signupbtn, .loginbtn, .submitbtn {
+    width: 20%;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*Styles for password validation message on sign up screen*/
+
+/* The message box is shown when the user clicks on the password field */
+#message, #pwMustMatch {
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#message p {
+    padding: 10px 35px;
+    font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    /*content: "&#10004;";*/
+}
+
+/* Add a red text color and an "x" icon when the requirements are wrong */
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    /*content: "&#10006;";*/
+}
+
+/*Styles for the Google Maps / view-requests page.*/
+
+#map{
+    height: 400px;  /* The height is 400 pixels */
+    width: 100%;  /* The width is the width of the web page */
+    background-color: gray;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+/*Styles for customer viewing "my requests" and "my bids" tables.*/
+.table-format{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.table-format td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table-format tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.table-format tr:hover {
+    background-color: #ddd;
+}
+
+.table-format th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: midnightblue;
+  color: white;
+}
+
+.table-format .tableHeader{
+    text-align: center;
+}
+
+#bidAccepted {
+    color: white;
+    background-color: green;
+    
+}
+
+/*Styles for accepted-bid page*/
+#request-table{
+    border: 5px solid blue;
+    width: 50%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#request-table h2(
+    text-align: center;
+    
+)
+
