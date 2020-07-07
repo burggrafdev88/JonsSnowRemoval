@@ -24,7 +24,7 @@
 
     $prepAddress = str_replace(' ', '+', $address);
 
-    $geocode = file_get_contents('https://maps.google.com/maps/api/geocode/json?address='.$prepAddress.'&key=AIzaSyCpasZnCrZDvcAjyWcoeBcVqqo5Yfzd05A');
+    $geocode = file_get_contents('https://maps.google.com/maps/api/geocode/json?address='.$prepAddress.'&key=deletedKey');  //deleted google api key
     $output= json_decode($geocode);
     $latitude = $output->results[0]->geometry->location->lat;
     $longitude = $output->results[0]->geometry->location->lng;
